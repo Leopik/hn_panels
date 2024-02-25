@@ -6,7 +6,7 @@ let chosenArticleId = null;
             .then(data => {
                 const contentList = document.getElementById('content-list');
                 contentList.innerHTML = ''; // Clear previous content
-                data.slice(0, 5).forEach(itemId => {
+                data.slice(0, 30).forEach(itemId => {
                     fetch(`https://hacker-news.firebaseio.com/v0/item/${itemId}.json`)
                     .then(response => response.json())
                     .then(item => {
