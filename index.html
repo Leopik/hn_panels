@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h1>Navigation</h1>
+        <button class="button" onclick="showArticles()">Articles</button>
+        <button class="button" onclick="showComments()">Comments</button>
+    </div>
+    <div id="container">
+        <div id="left-panel">
+            <h1>Content</h1>
+            <ul id="content-list">
+                <!-- Content will be populated here -->
+            </ul>
+        </div>
+        <div id="right-panel">
+            <h1>Article</h1>
+            <iframe id="content-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
